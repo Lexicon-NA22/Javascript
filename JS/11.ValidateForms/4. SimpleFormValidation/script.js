@@ -1,19 +1,19 @@
 const form = document.querySelector('#form');
 
-const validateFirstName = () => {
-  const firstName = document.querySelector('#firstName');
-  const firstNameError = document.querySelector('#firstName-error');
+// const validateFirstName = () => {
+//   const firstName = document.querySelector('#firstName');
+//   const firstNameError = document.querySelector('#firstName-error');
 
-  if(firstName.value === '') {
-    firstNameError.innerText = 'Du måste ange ett förnamn';
-  }
-  else if(firstName.value.length < 2) {
-    firstNameError.innerText = 'Du måste ange minst 2 tecken';
-  }
-  else {
-    firstNameError.innerText = '';
-  }
-}
+//   if(firstName.value === '') {
+//     firstNameError.innerText = 'Du måste ange ett förnamn';
+//   }
+//   else if(firstName.value.length < 2) {
+//     firstNameError.innerText = 'Du måste ange minst 2 tecken';
+//   }
+//   else {
+//     firstNameError.innerText = '';
+//   }
+// }
 
 
 const validate = (id) => {
@@ -39,8 +39,8 @@ form.addEventListener('submit', (e) => {
 
   // validateFirstName();
 
-  validate('#firstName');
-  validate('#lastName');
+  // validate('#firstName');
+  // validate('#lastName');
 
 
   if(validate('#firstName') && validate('#lastName')) {

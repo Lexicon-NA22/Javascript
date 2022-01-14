@@ -14,6 +14,7 @@ class Book{
 }
 
 const book1 = new Book('C#', 'Kalle', 2020);
+console.log( book1.summary());
 
 // const book2 = new Book(2, {}, []);
 // console.log(book2);
@@ -37,6 +38,7 @@ class Person{
 
     #firstName;
     #lastName;
+   
 
     get firstName(){
         return  this.#firstName;
@@ -57,7 +59,7 @@ class Person{
         console.log("private");
     }
 
-    GetFullNameFunktion(){
+    getFullNameFunktion(){
         this.#privateFunc();
         return `${this.#firstName} ${this.#lastName}`;
     }
@@ -65,7 +67,7 @@ class Person{
 }
 
 let person = new Person('Kalle', 'Anka');
-// console.log(person.GetFullNameFunktion());
+// console.log(person.getFullNameFunktion());
 // console.log(person.firstName);
 // person.fullName = 'Anders Karlsson';
 // console.log(person);
